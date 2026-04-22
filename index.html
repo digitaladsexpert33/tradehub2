@@ -1,106 +1,216 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Basic -->
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Master the Market – Beginner's Guide</title>
-  <meta name="description" content="100% free stock market education. Learn chart reading, technical analysis, and risk management. No buy/sell tips. For learning purpose only.">
-  <link rel="canonical" href="https://example.com/">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gold Market Learning</title>
 
-  <!-- Performance -->
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 
-  <!-- Favicons (optional) -->
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📊</text></svg>">
+<style>
+:root{
+  --neon-blue:#00e5ff;
+  --neon-soft:rgba(0,229,255,.6);
+}
 
-  <!-- Open Graph -->
-  <meta property="og:title" content="Master the Market – Beginner's Guide">
-  <meta property="og:description" content="Learn charts & risk management. No buy/sell tips. 100% educational.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://example.com/">
-  <meta property="og:image" content="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1600&auto=format&fit=crop">
+body{
+  margin:0;
+  background:#000;
+  font-family:'Poppins',sans-serif;
+}
 
-  <!-- Minimal CSS (inline for speed) -->
-  <style>
-    :root{
-      --bg1:#0c0c1d;
-      --bg2:#1a1a2b;
-      --brand: #ff6699;
-      --brand-2:#00f0ff;
-      --text:#ffffff;
-      --muted:#b5b5c3;
-    }
-    *{box-sizing:border-box}
-    html,body{margin:0;padding:0}
-    body{
-      font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-      color:var(--text);
-      background:
-        linear-gradient(135deg, rgba(0,0,0,.45), rgba(0,0,0,.45)),
-        url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1600&auto=format&fit=crop') no-repeat center/cover fixed;
-      -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
-      min-height:100vh;
-    }
-    .container{
-      max-width:520px; margin:0 auto; padding:24px 18px; text-align:center; min-height:100vh; display:flex; flex-direction:column; justify-content:center;
-      backdrop-filter: saturate(130%);
-    }
-    .badge{display:inline-block; font-size:.78rem; padding:6px 10px; border:1px solid #2a2a3a; border-radius:999px; color:#d6eaff; background:rgba(0,240,255,.08); margin-bottom:14px}
-    h1{font-size:1.9rem; line-height:1.2; margin:6px 0 10px; background:linear-gradient(90deg,var(--brand-2),var(--brand)); -webkit-background-clip:text; background-clip:text; color:transparent;}
-    .sub{font-size:1rem; color:var(--muted); margin:0 auto 16px; max-width:36ch}
-    .pill{
-      display:inline-flex; align-items:center; gap:8px; padding:8px 12px; border-radius:999px; background:rgba(0,255,153,.07); border:1px dashed rgba(0,255,153,.35); color:#d8ffe9; font-size:.9rem; margin:6px 0 18px;
-    }
-    ul.bullets{list-style:none; padding:0; margin:0 0 18px}
-    ul.bullets li{margin:8px 0; color:#e9eef9}
-    .cta{
-      display:inline-block; text-decoration:none; background:var(--brand); color:#041b14; padding:14px 18px; font-weight:700; border-radius:12px; box-shadow:0 0 0 0 rgba(0,255,153,.6); transform:translateZ(0);
-      transition:transform .15s ease;
-      animation:pulse 1.6s infinite;
-    }
-    .cta:active{transform:scale(.98)}
-    @keyframes pulse{
-      0%{box-shadow:0 0 0 0 rgba(0,255,153,.55)}
-      70%{box-shadow:0 0 0 20px rgba(0,255,153,0)}
-      100%{box-shadow:0 0 0 0 rgba(0,255,153,0)}
-    }
-    .fineprint{font-size:.86rem; color:var(--muted); margin:18px auto 0; max-width:44ch}
-    .disclaimer{font-size:.78rem; color:#9aa4b2; margin:18px auto 0; max-width:50ch}
-    .safe{display:flex; align-items:center; justify-content:center; gap:8px; margin-top:14px; color:#a1ffd6; font-size:.9rem}
-    .shield{width:18px; height:18px; display:inline-block; border-radius:4px; background:linear-gradient(135deg,#0df,#0f9)}
-    footer{opacity:.8; margin-top:22px; font-size:.78rem; color:#9aa4b2}
-  </style>
+.wrapper{
+  min-height:100svh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:20px;
+}
+
+.card{
+  max-width:440px;
+  width:100%;
+  background:linear-gradient(180deg,#050505,#0b0b0b);
+  border-radius:26px;
+  padding:36px 26px;
+  text-align:center;
+  box-shadow:
+    0 0 40px rgba(0,229,255,.15),
+    inset 0 0 25px rgba(255,255,255,.03);
+}
+
+.logo{
+  width:74px;
+  height:74px;
+  margin:0 auto 20px;
+  border-radius:50%;
+  padding:3px;
+  background:linear-gradient(135deg,#00e5ff,#2979ff);
+  box-shadow:0 0 25px rgba(0,229,255,.8);
+}
+
+.logo img{
+  width:100%;
+  height:100%;
+  border-radius:50%;
+  object-fit:cover;
+  background:#000;
+}
+
+h1{
+  font-size:24px;
+  font-weight:700;
+  color:#fff;
+  text-shadow:0 0 14px var(--neon-blue);
+  margin-bottom:6px;
+}
+
+.subtitle{
+  font-size:14px;
+  color:#e0f7fa;
+  margin-bottom:20px;
+}
+
+.trust{
+  font-size:13px;
+  color:#b2ebf2;
+  margin-bottom:10px;
+}
+
+.urgency{
+  font-size:12px;
+  color:#ffcc80;
+  margin-bottom:10px;
+}
+
+ul{
+  list-style:none;
+  padding:0;
+  margin:20px 0;
+  text-align:left;
+}
+
+ul li{
+  font-size:14px;
+  padding:12px;
+  margin-bottom:10px;
+  background:rgba(255,255,255,.04);
+  border-radius:12px;
+  color:#e0f7fa;
+}
+
+.note-top{
+  font-size:11px;
+  color:#90a4ae;
+  margin-bottom:12px;
+}
+
+.cta{
+  display:block;
+  margin-top:15px;
+  background:linear-gradient(135deg,#00e5ff,#2979ff);
+  color:#000;
+  text-decoration:none;
+  padding:16px;
+  border-radius:14px;
+  font-size:15px;
+  font-weight:700;
+  box-shadow:
+    0 0 25px rgba(0,229,255,.9);
+}
+
+.footer{
+  margin-top:18px;
+  font-size:11px;
+  color:#90a4ae;
+  line-height:1.6;
+}
+</style>
+
+<!-- Meta Pixel -->
+<script>
+!function(f,b,e,v,n,t,s){
+if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)
+}(window, document,'script','https://connect.facebook.net/en_US/fbevents.js');
+
+fbq('init','4290254534550958');
+fbq('track','PageView');
+</script>
+
 </head>
+
 <body>
-  <main class="container">
-    <span class="badge">100% Educational • Policy Safe</span>
-    <h1>Master the Market – Beginner's Guide</h1>
-    <p class="sub">Education only – no investment advice</p>
 
-    <div class="pill">🚫 No Buy/Sell Tips • ✅ For Learning Purpose Only</div>
+<div class="wrapper">
+  <div class="card">
 
-    <ul class="bullets" aria-label="What you'll learn">
-      <li>• Chart basics & risk rules (no return promises)</li>
-      <li>• How to read trends without speculation</li>
-      <li>• Market discipline & common mistakes</li>
+    <div class="logo">
+      <img src="tradehub.png" alt="logo">
+    </div>
+
+    <h1>Learn Gold Market (XAUUSD)</h1>
+
+    <div class="subtitle">
+      Simple educational community to understand how gold price moves step-by-step.
+    </div>
+
+    <div class="trust">
+      Join 1,000+ learners exploring the gold market daily
+    </div>
+
+    <div class="urgency">
+      Limited spots to keep community quality high
+    </div>
+
+    <ul>
+      <li>✔ Learn how gold price behaves in real conditions</li>
+      <li>✔ Understand basic price action concepts</li>
+      <li>✔ Beginner-friendly explanations</li>
+      <li>✔ Focus on discipline & risk awareness</li>
+      <li>✔ Supportive learning environment</li>
     </ul>
 
-    <!-- CTA goes to a page-specific bridge -->
-    <a class="cta" href="bridge-lp75.html" rel="nofollow">Start Learning</a>
+    <div class="note-top">
+      For educational purposes only — no financial advice
+    </div>
 
-    <div class="safe"><span class="shield" aria-hidden="true"></span> Ad Policy Friendly Content</div>
+    <a class="cta" href="https://t.me/+q8ewpeUReKMzZWVl" onclick="openTelegram(event)">
+      👉 Join Free Learning Community
+    </a>
 
-    <p class="fineprint">We focus on concepts & frameworks suitable for beginners.</p>
-    <p class="disclaimer"><em>This website is for educational purposes only. We do not provide investment, trading, or financial advice.</em></p>
+    <div class="footer">
+      This platform provides educational content only.  
+      We do not offer financial or investment advice.  
+      No profit guarantees are made. Trading involves risk.
+    </div>
 
-    <footer>© <span id="y"></span> Market Basics Learning Hub</footer>
-  </main>
+  </div>
+</div>
 
-  <script>
-    document.getElementById('y').textContent = new Date().getFullYear();
-  </script>
+<script>
+function openTelegram(e){
+  e.preventDefault();
+
+  var deepLink = "tg://join?invite=q8ewpeUReKMzZWVl";
+  var webLink = "https://t.me/+q8ewpeUReKMzZWVl";
+
+  if (typeof fbq === "function") {
+    fbq('trackCustom','TelegramJoinClick');
+    fbq('track','Lead');
+  }
+
+  window.location.href = deepLink;
+
+  setTimeout(function(){
+    window.location.href = webLink;
+  }, 1500);
+}
+</script>
+
 </body>
 </html>
